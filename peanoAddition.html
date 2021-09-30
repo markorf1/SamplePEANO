@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <!-- body tag -->
+  <body>
+    <script>
+      //input x 
+      let x = prompt("Enter a first number to add:");
+      //input y
+      let y = prompt("Enter a first number to add:");
+      //function peanoAddition called
+      alert("Sum is: "+peanoAddition(x,y));
+      //function peanoAddition defined
+      function peanoAddition(x,y){
+        //base case
+        //if y becomes 0, return the value of x
+        if(parseInt(y)==0)
+          return x
+        //else increment x and decrement y
+        return peanoAddition(parseInt(x)+1,parseInt(y)-1);
+      }
+    </script>
+  </body> <!-- body tag closed -->
+</html>
